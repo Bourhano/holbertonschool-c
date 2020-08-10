@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -m64 -S $CFILE -o`echo $CFILE|cut -f1 -d.`.s
+gcc -masm=intel -S $CFILE -o`echo $CFILE|cut -f1 -d.`.s
