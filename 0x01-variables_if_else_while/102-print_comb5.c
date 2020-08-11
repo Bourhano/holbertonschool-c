@@ -7,34 +7,25 @@
  */
 int main(void)
 {
-	int i, j, k, m;
-	int ok1, ok2;
+	int i, j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j < 100; j++)
 		{
-			for (k = 0; k < 10; k++)
+			if (i / 10 != j / 10 || i % 10 != j % 10)
 			{
-				for (m = 0; m < 10; m++)
+				if (i < j)
 				{
-					if (i != k || j != m)
+					putchar('0' + i / 10);
+					putchar('0' + i % 10);
+					putchar(' ');
+					putchar('0' + j / 10);
+					putchar('0' + j % 10);
+					if (i != 98 || j != 99)
 					{
-						if (i * 10 + j < k * 10 + m)
-						{
-							ok1 = i != 9 || j != 8;
-							ok2 = k != 9 || m != 9;
-							putchar('0' + i);
-							putchar('0' + j);
-							putchar(' ');
-							putchar('0' + k);
-							putchar('0' + m);
-							if (ok1 || ok2)
-							{
-								putchar(',');
-								putchar(' ');
-							}
-						}
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
