@@ -8,6 +8,7 @@
 int main(void)
 {
 	int i, j, k, m;
+	int ok1, ok2;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -21,12 +22,14 @@ int main(void)
 					{
 						if (i * 10 + j < k * 10 + m)
 						{
+							ok1 = i != 9 || j != 8;
+							ok2 = k != 9 || m != 9;
 							putchar('0' + i);
 							putchar('0' + j);
 							putchar(' ');
 							putchar('0' + k);
 							putchar('0' + m);
-							if (i != 9 || j != 8 || k != 9 || m != 9)
+							if (ok1 || ok2)
 							{
 								putchar(',');
 								putchar(' ');
