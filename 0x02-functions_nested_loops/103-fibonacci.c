@@ -11,7 +11,7 @@ int main(void)
 	int c = 1;
 	long p = 2, pp = 1, f, s = 2;
 
-	while (c < 35)
+	while (c < 36)
 	{
 		f = p + pp;
 		pp = p;
