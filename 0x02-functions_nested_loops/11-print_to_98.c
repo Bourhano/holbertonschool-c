@@ -5,6 +5,7 @@
  * print_to _98 - Print numbers from n to 98
  * @n: starting number
  *
+ * Description: Prints all numbers from n to 98 in order
  * Return: none
  **/
 void print_to_98(int n)
