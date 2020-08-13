@@ -11,14 +11,14 @@ int main(void)
 	int i;
 
 	/*
-	l = sizeof(holberton);
-	for(i = 0;i < l; i++)
-		_putchar(*(holberton+i));
+	 *l = sizeof(holberton);
+	 *for(i = 0;i < l; i++)
+	 *	_putchar(*(holberton+i));
 	*/
-	i=0;
+	i = 0;
 	while (holberton[i] != '\0')
 	{
-		_putchar(*(holberton+i));
+		_putchar(*(holberton + i));
 		i++;
 	}
 	return (0);
