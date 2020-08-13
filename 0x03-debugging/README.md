@@ -1,0 +1,1 @@
+This directory (0x03) contains exercices concerning debugging for C programming.
