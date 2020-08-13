@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_to _98 - Print numbers from n to 98
+ * print_to_98 - Print numbers from n to 98
  * @n: starting number
  *
  * Description: Prints all numbers from n to 98 in order
