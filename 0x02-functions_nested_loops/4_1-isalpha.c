@@ -14,13 +14,15 @@
  **/
 int _isalpha(int c)
 {
-	int testc = 0, isalpha = 0;
+	char testc = 'A';
+	int isupper = 0;
 
-	while (!isalpha && testc < 26)
+	if (_islower(c))
+		return (1);
+	while (!isupper && testc != 'Z' + 1)
 	{
-		if (c == 'a' + testc || c == 'A' + testc)
-			isalpha = 1;
+		isupper = c == testc;
 		testc++;
 	}
-	return (isalpha);
+	return (isupper);
 }
