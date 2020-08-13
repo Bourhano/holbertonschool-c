@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int c = 1;
+	int c = 0;
 	long p = 2, pp = 1, f;
 
 	printf("1, 2, ");
