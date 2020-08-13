@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	int c = 0;
+	int c = 1;
 	long p = 2, pp = 1, f;
 
 	printf("1, 2, ");
-	while (c < 50)
+	while (c < 48)
 	{
 		f = p + pp;
 		pp = p;
