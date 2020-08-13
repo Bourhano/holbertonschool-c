@@ -12,17 +12,14 @@ int main(void)
 	long p = 2, pp = 1, f;
 
 	printf("1, 2, ");
-	while (c < 50)
+	while (c < 49)
 	{
 		f = p + pp;
 		pp = p;
 		p = f;
-		if (c != 49)
-			printf("%ld, ", f);
-		else
-			printf("%ld", f);
+		printf("%ld, ", f);
 		c++;
 	}
-	printf("\n");
+	printf("%ld\n", p + pp);
 	return (0);
 }
