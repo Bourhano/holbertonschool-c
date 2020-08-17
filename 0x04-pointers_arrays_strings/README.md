@@ -1,0 +1,1 @@
+This directory contains tasks regarding the usage of pointers and references in C.
