@@ -4,7 +4,6 @@
  * print_rev - Prints the inverse of the input string to stdout
  * @s: the string to be printed
  *
- * Return: none
  **/
 void print_rev(char *s)
 {
