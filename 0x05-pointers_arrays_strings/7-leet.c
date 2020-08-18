@@ -9,9 +9,9 @@
  **/
 void replace(char c1, char c2, char c3, char *s)
 {
-	while (*s++ != '\0')
+	while (*s)
 		if (*s == c1 || *s == c2)
-			*s = c3;
+			*s++ = c3;
 }
 
 /**

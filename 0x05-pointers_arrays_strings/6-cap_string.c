@@ -8,13 +8,23 @@
  **/
 char *cap_string(char *s)
 {
-	char *ptr = s, special = " \t\n,;.!?\"(){}\0";
+	char c, *ptr = s, special[13] = " \t\n,;.!?\"(){}";
+	int i;
 
+	if (*ptr >= 'a' && *ptr <= 'z')
+	{
+		*ptr -= 'a';
+		*ptr += 'A';
+	}
 	while (*ptr++)
-		if (*ptr == special++ && special)
-		{
-			*ptr -= 'a';
-			*ptr += 'A';
-		}
+	{
+		c = *(ptr + 1);
+		for (i = 0; i < 13; i++)
+			if (*ptr == special[i] && c >= 'a' && c <= 'z')
+			{
+				*(ptr + 1) -= 'a';
+				*(ptr + 1) += 'A';
+			}
+	}
 	return (s);
 }
