@@ -8,10 +8,10 @@
  **/
 char *cap_string(char *s)
 {
-	char *ptr = s, special = " \t\n,;.!?\"(){}";
+	char *ptr = s, special = " \t\n,;.!?\"(){}\0";
 
 	while (*ptr++)
-		if (*ptr == special)
+		if (*ptr == special++ && special)
 		{
 			*ptr -= 'a';
 			*ptr += 'A';
