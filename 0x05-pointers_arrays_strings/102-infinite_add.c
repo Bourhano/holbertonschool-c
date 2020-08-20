@@ -18,7 +18,7 @@ void print_number(int n)
 		_putchar('0');
 	else
 	{
-		for ( ; n >0 ; l++)
+		for ( ; n > 0 ; l++)
 		{
 			nbc[l] = n % 10;
 			n /= 10;
