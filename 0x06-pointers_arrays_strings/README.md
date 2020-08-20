@@ -1,0 +1,1 @@
+This directory 0x06 contains more applications on pointers like matrices and string functions.
