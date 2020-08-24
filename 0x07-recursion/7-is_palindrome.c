@@ -8,9 +8,9 @@
  **/
 int _strlen_recursion(char *s)
 {
-        if (!*s)
-                return (0);
-        return (1 + _strlen_recursion(++s));
+	if (!*s)
+		return (0);
+	return (1 + _strlen_recursion(++s));
 }
 
 /**
@@ -24,7 +24,7 @@ int _strlen_recursion(char *s)
 int is_palindrome_(char *s, int l, int i)
 {
 	if (i == l / 2)
-		return 1;
+		return (1);
 	return ((*(s + i) == *(s + l - i)) * is_palindrome_(s, l, i + 1));
 }
 

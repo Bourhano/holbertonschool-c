@@ -9,10 +9,10 @@
  **/
 int is_prime_number_(int n, int i)
 {
-        if (n == 0 || n == 1 || n < 0)
+	if (n == 0 || n == 1 || n < 0)
 		return (0);
 	if (i == n)
-		return 1;
+		return (1);
 	return (!(n % i == 0) * is_prime_number_(n, i + 1));
 }
 
