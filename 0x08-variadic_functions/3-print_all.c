@@ -8,9 +8,9 @@
 void print_all(const char *format, ...)
 {
 	va_list valist;
-	const char * string = format;
+	const char *string = format;
 	int l = 0;
-	char * s;
+	char *s;
 
 	while (*string++)
 		l++;
