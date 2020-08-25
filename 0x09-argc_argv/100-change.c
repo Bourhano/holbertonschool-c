@@ -4,6 +4,7 @@
 /**
  * cashback - Calculates number of return coins
  * @cents: amount to cash back
+ * @sum: coins count
  */
 void cashback(int cents, int sum)
 {
