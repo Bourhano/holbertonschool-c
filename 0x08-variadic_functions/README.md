@@ -1,0 +1,1 @@
+This directory contains tasks targeting th usage of functions with variable count of arguments.
