@@ -10,14 +10,14 @@
  */
 int main(int argc, char *argv[])
 {
-	int i = 1 , j, ok = 1, sum = 0;
+	int i = 1, j, ok = 1, sum = 0;
 
 	while (ok && i < argc)
 	{
 		j = 0;
 		while (argv[i][j] && ok)
 		{
-			ok = (*argv[i] >= '0'&& *argv[i] <= '9');
+			ok = (argv[i][j] >= '0' && argv[i][j] <= '9');
 			j++;
 		}
 		i++;
