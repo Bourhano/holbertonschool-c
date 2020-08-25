@@ -2,27 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
- * @argc: arguments count
- * @argv: arguments contents
- *
- * Return: Always 0 (Success)
+ * cashback - Calculates number of return coins
+ * @cents: amount to cash back
  */
-int main(int argc, char *argv[])
+void cashback(int cents, int sum)
 {
-	int cents, sum = 0;
-
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	cents = atoi(argv[1]);
-	if (cents < 0)
-	{
-		printf("0\n");
-		return (0);
-	}
 	while (cents)
 	{
 		if (cents >= 25)
@@ -52,5 +36,31 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", sum);
+}
+
+
+/**
+ * main - Entry point
+ * @argc: arguments count
+ * @argv: arguments contents
+ *
+ * Return: Always 0 (Success)
+ */
+int main(int argc, char *argv[])
+{
+	int cents, sum = 0;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	cents = atoi(argv[1]);
+	if (cents < 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+	cashback(cents, sum);
 	return (0);
 }
