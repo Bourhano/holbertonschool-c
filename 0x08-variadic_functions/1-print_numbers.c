@@ -13,9 +13,9 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	va_start(valist, n);
 	for (i = 0; i < n; i++)
-		if (!*separator || i == n-1) /* separator[0] == 0 */
+		if (!*separator || i == n - 1) /* separator[0] == 0 */
 			printf("%d", va_arg(valist, int));
-		else if (i != n-1)
+		else if (i != n - 1)
 			printf("%d%s", va_arg(valist, int), separator);
 	va_end(valist);
 	printf("\n");
