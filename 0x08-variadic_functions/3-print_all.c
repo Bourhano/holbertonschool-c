@@ -42,8 +42,6 @@ void print_all(const char *format, ...)
 			printf("%f%s", va_arg(valist, double),
 			       l == 1 ? "" : ", ");
 			break;
-		default:
-			break;
 		}
 		l--;
 	}
