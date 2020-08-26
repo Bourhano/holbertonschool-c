@@ -34,6 +34,8 @@ void print_all(const char *format, ...)
 			break;
 		case 's':
 			s =  va_arg(valist, char *);
+			if (s == NULL)
+				s = "";
 			printf("%s%s", *s ? s : "(nil)", l == 1 ? "" : ", ");
 			break;
 		case 'f':
