@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdlib.h>
 #include "variadic_functions.h"
 
 /**
@@ -12,6 +13,8 @@ void print_all(const char *format, ...)
 	int l = 0;
 	char *s;
 
+	if  (format == NULL)
+		return;
 	while (*string++)
 		l++;
 	va_start(valist, format);
