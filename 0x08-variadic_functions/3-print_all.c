@@ -14,7 +14,10 @@ void print_all(const char *format, ...)
 	char *s;
 
 	if  (format == NULL)
+	{
+		printf("\n");
 		return;
+	}
 	while (*string++)
 		l++;
 	va_start(valist, format);
