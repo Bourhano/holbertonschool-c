@@ -31,7 +31,7 @@ void print_all(const char *format, ...)
 			printf("%s%s", *s ? s : "(nil)", l == 1 ? "" : ", ");
 			break;
 		case 'f':
-			printf("%f%s hahaha", va_arg(valist, double),
+			printf("%f%s", va_arg(valist, double),
 			       l == 1 ? "" : ", ");
 			break;
 		default:
