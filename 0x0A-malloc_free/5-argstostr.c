@@ -9,8 +9,11 @@
  **/
 char *argstostr(int ac, char **av)
 {
-	int i = 0;
+	int i, l = 0;
 
 	if ( ac == 0  || av == NULL)
 		return (NULL);
+	for (i = 0; i < ac - 1; i++)
+		l++;
+	return (NULL);
 }
