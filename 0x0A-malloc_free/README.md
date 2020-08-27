@@ -1,0 +1,1 @@
+This directory contains exercises targeted at memory allocation and its management.
