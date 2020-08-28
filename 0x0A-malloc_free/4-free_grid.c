@@ -2,6 +2,7 @@
 
 /**
  * free_grid - frees a widthxlength grid of int
+ * @grid: the grid to be free'd
  * @height: height of the grid
  **/
 void free_grid(int **grid, int height)
