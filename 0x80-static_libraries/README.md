@@ -1,0 +1,1 @@
+This directory contains applications on creating static libraries.
