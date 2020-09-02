@@ -29,7 +29,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	size_t total = nmemb * size;
 	void *p = malloc(total);
 
-	if (!p || !total)
+	if (p == 0 || total == 0)
 		return (NULL);
-	return _memset(p, 0, total);
+	return (_memset(p, 0, total));
 }
