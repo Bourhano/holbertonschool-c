@@ -1,0 +1,1 @@
+This directory contains direct applications on function pointers.
