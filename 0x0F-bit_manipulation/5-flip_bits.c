@@ -8,7 +8,7 @@
  *
  * Return: differences count
  **/
-int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	if (n > 1 && m > 1)
 		return (((n & 1) != (m & 1)) + flip_bits(n >> 1, m >> 1));
