@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -38,7 +38,7 @@ int main(int argc, char **argv)
 	fdw = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while (more)
 	{
-		more = read(fd, buf, 1024);
+		more = read(fdr, buf, 1024);
 		if (fdr == -1 || more == -1)
 		{
 			dprintf(STDERR_FILENO,
@@ -53,7 +53,7 @@ int main(int argc, char **argv)
 			return (99);
 		}
 	}
-	cls(fdr)
+	cls(fdr);
 	cls(fdw);
 	return (0);
 }
