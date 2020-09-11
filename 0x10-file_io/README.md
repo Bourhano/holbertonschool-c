@@ -1,0 +1,1 @@
+This direectory contains applications on files in Linux, concerning creating, opening, writing to and reading from files.
