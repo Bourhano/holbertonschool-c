@@ -3,7 +3,7 @@ SRC=main.c holberton.c
 OBJ=$(subst c,o,$(SRC))
 NAME=holberton
 RM=rm -f
-all: main.o holberton.o
+all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 main.o: main.c
 	$(CC)    -c -o main.o main.c

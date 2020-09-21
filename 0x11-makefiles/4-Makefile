@@ -4,7 +4,7 @@ OBJ=$(subst c,o,$(SRC))
 NAME=holberton
 RM=rm -f
 CFLAGS=-Wall -Werror -Wextra -pedantic
-all: main.o holberton.o
+all: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 main.o: main.c
 	$(CC)    -c -o main.o main.c
