@@ -12,4 +12,4 @@ oclean:
 	$(RM) $(OBJ)
 fclean: oclean
 	$(RM) *~ $(NAME)
-re: main.o holberton.o all
+re: $(OBJ) all
