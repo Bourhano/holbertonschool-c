@@ -1,0 +1,1 @@
+THis directory has applications on Makefiles which are used to simplify project deployment and reduce redundancies while compiling and updating executables.
