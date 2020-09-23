@@ -1,0 +1,1 @@
+This directory has applications on the dynamic lybrary implementation and usages as a shared object (.so)
