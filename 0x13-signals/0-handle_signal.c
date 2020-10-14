@@ -8,6 +8,7 @@ static void gotcha(int signo)
 {
 	printf("Gotcha! [%d]\n", signo);
 	signal(signo, gotcha);
+	fflush(stdout);
 }
 
 /**
