@@ -8,6 +8,7 @@ static void gotcha(int signo)
 {
 	printf("Gotcha! [%d]\n", signo);
 	signal(signo, gotcha);
+	fflush(stdout);
 }
 
 /**
@@ -17,6 +18,7 @@ static void gotcha(int signo)
  **/
 int handle_signal(void)
 {
-	signal(SIGINT, gotcha);
+	if (signal(SIGINT, gotcha) == SIG_ERR)
+		return (-1);
 	return (0);
 }
