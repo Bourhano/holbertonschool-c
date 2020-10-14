@@ -1,0 +1,1 @@
+This directory contains applications on the signals in UNIX-like computers, handling them and masking.
