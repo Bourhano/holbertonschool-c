@@ -8,6 +8,7 @@
 #include<unistd.h>
 #include<string.h>
 #include<stdlib.h>
+#include "stdafx.h"
 
 #define GETALL -2
 #define VERBOSE_OFF 0
