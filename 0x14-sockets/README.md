@@ -1,0 +1,1 @@
+This directory includes work on sockets ran with TCP and UDP, in order to build a REST API.
