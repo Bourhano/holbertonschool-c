@@ -24,6 +24,7 @@ int main(void)
 	if (listen(servSock, 10) < 0)
 		printf("listen() failed");
 	printf("listening...\n");
-	for (;;)		;
+	for (;;)
+		;
 	return (0);
 }
