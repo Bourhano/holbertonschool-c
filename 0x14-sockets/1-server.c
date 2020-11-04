@@ -1,5 +1,4 @@
 #include "sockets.h"
-#define PORT 12345
 
 /**
  * main - opens an IPv4/TCP socket, and listens to traffic on port 12345
@@ -8,7 +7,7 @@
  */
 int main(void)
 {
-	int servSock;
+	int servSock, PORT = 12345;
 	socklen_t len;
 	struct sockaddr_in echoServAddr = {0}, echoCliAddr = {0};
 
