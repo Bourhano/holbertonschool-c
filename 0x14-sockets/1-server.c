@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int servSock, PORT = 12345;
+	int servSock, PORt = 12345;
 	socklen_t len;
 	struct sockaddr_in echoServAddr = {0}, echoCliAddr = {0};
 
@@ -17,14 +17,14 @@ int main(void)
 
 	echoServAddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	echoServAddr.sin_family = AF_INET;
-	echoServAddr.sin_port = htons(PORT);
+	echoServAddr.sin_port = htons(PORt);
 
 	if (bind(servSock, (struct sockaddr *) &echoServAddr,
 		sizeof(echoServAddr)) < 0)
 		printf("bind() failed");
 	if (listen(servSock, 10) < 0)
 		printf("listen() failed");
-	printf("Server listening on port %d\n", PORT);
+	printf("Server listening on port %d\n", PORt);
 	len = sizeof(echoCliAddr);
 	accept(servSock, (struct sockaddr *) &echoCliAddr, &len);
 	printf("Client connected: %s\n", inet_ntoa(echoCliAddr.sin_addr));
