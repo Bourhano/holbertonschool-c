@@ -16,9 +16,9 @@
  */
 int main(void)
 {
-	assert(strlen(S1) == 16);
-	assert(strlen(S2) == 0);
-	assert(strlen(S3) == 0);
+	assert(asm_strlen(S1) == 16);
+	assert(asm_strlen(S2) == 0);
+	assert(asm_strlen(S3) == 0);
 
 	printf("All good!\n");
 	return (EXIT_SUCCESS);
