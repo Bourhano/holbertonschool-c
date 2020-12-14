@@ -1,0 +1,1 @@
+This directory focuses on implementing string functions with a raw assembly language, in this case: NASM v2.

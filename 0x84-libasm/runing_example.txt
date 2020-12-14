@@ -1,0 +1,4 @@
+alex@~/0x84-libasm$ gcc -Wall -Wextra -Werror -pedantic -g3 -c -o 0-main.o 0-main.c
+alex@~/0x84-libasm$ nasm -f elf64 -o 0-strlen.o 0-strlen.asm
+alex@~/0x84-libasm$ gcc -o 0-strlen 0-main.o 0-strlen.o
+alex@~/0x84-libasm$ ./0-strlen 
