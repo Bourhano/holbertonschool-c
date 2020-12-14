@@ -1,9 +1,10 @@
 CC=gcc
-NAME=0-strlen
-SRC1=0-main.c
+NB=0
+NAME=$(NB)-strlen
+SRC1=$(NB)-main.c
 OBJ1=$(SRC1:.c=.o)
 CFLAGS=-Wall -Wextra -Werror -pedantic -g3 -c
-SRC2=0-strlen.asm
+SRC2=$(NAME).asm
 OBJ2=$(SRC2:.asm=.o)
 OBJS=$(OBJ1) $(OBJ2)
 .phony: clean
