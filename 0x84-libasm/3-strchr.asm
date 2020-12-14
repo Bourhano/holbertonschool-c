@@ -5,7 +5,6 @@ section .text
 asm_strchr:
 	push rbp
 	mov rbp, rsp
-	;call strchr_loop
 
 strchr_loop:
 	cmp byte [rdi], 0  ; test end of string
@@ -23,8 +22,8 @@ strchr_end:
 	mov rsp, rbp
 	pop rbp
 	ret
-fail_end:
 
+fail_end:
 	mov rax, 0
 	mov rsp, rbp
 	pop rbp
