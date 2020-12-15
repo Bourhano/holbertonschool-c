@@ -1,9 +1,9 @@
 CC=gcc
-NB=0
-NAME=$(NB)-strlen
+NB=6
+NAME=$(NB)-putc
 SRC1=$(NB)-main.c
 OBJ1=$(SRC1:.c=.o)
-CFLAGS=-Wall -Wextra -Werror -pedantic -g3 -c
+CFLAGS=-Wall -Wextra -Werror -pedantic -g3
 SRC2=$(NAME).asm
 OBJ2=$(SRC2:.asm=.o)
 OBJS=$(OBJ1) $(OBJ2)
