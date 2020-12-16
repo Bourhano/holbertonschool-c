@@ -1,6 +1,6 @@
 CC=gcc
-NB=6
-NAME=$(NB)-putc
+NB=9
+NAME=$(NB)-strncasecmp
 SRC1=$(NB)-main.c
 OBJ1=$(SRC1:.c=.o)
 CFLAGS=-Wall -Wextra -Werror -pedantic -g3
